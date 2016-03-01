@@ -1,0 +1,157 @@
+.center {
+  text-align: center
+}
+
+.middle {
+  vertical-align: middle
+}
+
+a {
+  color: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: table;
+  width: 100%;
+  background-color: #EEE;
+  margin: 0;
+}
+
+h1 {
+  color: green;
+  font-size: 3.5em;
+  margin: 10px 0;
+  background-color: rgba(0,0,0,0.1);
+}
+
+h1 > span {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 10px;
+}
+
+h1 span span {
+  font-size: .4em;
+}
+
+h1 img {
+  vertical-align: middle;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  position: relative;
+}
+
+nav li a, #logout a {
+  text-decoration: none;
+  padding: 7px;
+  display: block;
+  background-color: #444;
+  color: white;
+}
+
+#logout {
+  position: absolute;
+  top: 13px;
+  right: 3px;
+  text-align: right;
+}
+
+#logout a {
+  margin-bottom: 3px;
+  display: inline-block;
+}
+
+nav li:hover > a, #logout a:hover {
+  background-color: #888;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a, #logout a {
+  border-radius: 5px;
+}
+
+nav > ul > li:hover > a {
+  border-radius: 5px 5px 0 0;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  text-align: left
+}
+
+nav li:hover > ul {
+  display: block;
+}
+
+nav > ul > li > ul > li, nav ul li ul li ul li:not(:first-child) {
+  margin-top: 1px;
+}
+
+nav > ul > li > ul > li > ul {
+  top: 0;
+  left: 100%;
+}
+
+nav ul li ul li ul li {
+  margin-left: 1px;
+}
+
+#wrapper {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+@keyframes blink {
+  0% {background-color: green}
+  25% {background-color: blue}
+  50% {background-color: red}
+  75% {background-color: yellow}
+}
+
+.ad {
+  -webkit-animation: blink 1s step-end infinite;
+  animation: blink 1s step-end infinite;
+}
+
+footer {
+  display: table-row;
+  height: 40px;
+  border: 2px solid red;
+  color: #333;
+  font-style: italic;
+}
+
+label.required::after {
+  content: "*";
+  color: red;
+}
+
+.message {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+input[type="date"] {
+  background-color: white;
+}
